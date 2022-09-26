@@ -15,3 +15,7 @@
 - Mediante la utilización de las clases de Boostrap `dark` y `light` de los distintos componentes se logró la dinámica deseada.
 
 - El menú se vinculó con los archivos deseados mediante el evento `onLoad` del `<body>` para lo cual se adoso la funcion `init()` que realiza dicho vinculo en cada documento.
+
+## Enlace a la publicación en Netlify
+
+- https://webapp-ciu.netlify.app/
