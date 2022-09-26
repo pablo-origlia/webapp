@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webapp Restaurant</title>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/light.css" />
+  </head>
+  <body onload="init()">
+    <header>
+      <nav id="navbarRes" class="navbar navbar-expand-md navbar-light bg-light">
+        <a id="logo_img" class="navbar-brand" href="#"><img src="/img/logo.png" alt="Restaurant" width="100px" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav dark">
+            <li class="nav-item">
+              <a id="home_navbar" class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a id="menu_navbar" class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a id="contact_navbar" class="nav-link" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" onclick="toggleTheme()" id="mode_icon">🌑</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid">
+      <section class="row justify-content-center">
+        <article class="col-xs-8 col-md-6 text-center">
+          <div id="lista-menu" class="list-group">
+            <a href="detalle.html#menu-ejecutivo" class="list-group-item list-group-item-action">Menú Ejecutivo</a>
+            <a href="detalle.html#menu-festivo" class="list-group-item list-group-item-action">Menú Festivo</a>
+            <a href="detalle.html#menu-especial" class="list-group-item list-group-item-action">Menú Especial</a>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="container p-4">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6 col-md-12 mb-4 text-left">
+            <img class="mapa" src="/img/ubicacion.png" alt="ubicacion" width="100%" />
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <ul class="list-group">
+              <il><i class="bi bi-geo-alt"></i> Humboldt 2192</il>
+              <il><i class="bi bi-globe"></i> Buenos Aires, Argentina.</il>
+              <il><i class="bi bi-phone"></i> +54 11 4444-1234</il>
+              <il><i class="bi bi-whatsapp"></i> +54 9 11 4444-4321 </il>
+              <il><i class="bi bi-envelope"></i> info@restaurant.com.ar</il>
+              <il><i class="bi bi-clock"></i> Lunes a Sábados 10 a 00 hs</il>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 text-center">
+            <p>
+              <a href="/"><img src="/img/pedidos-ya-logo.png" alt="pedidos-ya-logo" width="100px" /></a>
+            </p>
+            <p class="fs-2 mb-3"><i class="bi bi-facebook"></i> <i class="bi bi-instagram"></i> <i class="bi bi-tiktok"></i></p>
+          </div>
+        </div>
+      </div>
+      <p class="footer-copyright text-center py-3">© 2022 Copyright <a href="/">Restaurant</a></p>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

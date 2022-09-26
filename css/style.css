@@ -1,0 +1,13 @@
+.platos {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+/*
+a#mode_icon {
+  text-decoration: none;
+}
+*/
+.invert_effect {
+  filter: invert(100%);
+}
